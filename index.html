@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="d.jpeg" class="menu-img">
+            <img src="c.jpeg" class="logo">
+            <ul>
+                <li>PROJECT made by <br><hr> vishal tomar</li>
+                <li><a href="">latest</a></li>
+
+                <li><a href="">morden</a></li>
+                <li><a href="">contemparay</a></li>
+                <li><a href="">affordable</a></li>
+            </ul>
+            <button type="button" onclick=" toggleBtn()" id="btn"><span></span></button>
+        </nav>
+        <div class="lamp-container">
+            <img src="a.jpeg" alt="" class="lamp">
+            <img src="b.jpeg" alt="" class="light" id="light">
+        </div>
+        <div class="text-container">
+            <h1> Latest <br> <hr>in lighting  </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque, aliquid voluptate hic consequatur nobis! Asperiores fugit tenetur iste eos.</p>
+            <a href=""> check all collection</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p> 05</p>
+            </div>
+        </div>
+    </div>
+<script >
+    var btn= document.getElementById("btn");
+    
+    var light= document.getElementById("light");
+    function toggleBtn( ){
+        btn.classList.toggle("active");
+        light.classList.toggle("on")
+    }
+</script>
+</body>
+
+</html>
